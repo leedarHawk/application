@@ -1,0 +1,81 @@
+/*-----------------------------------------------------------------------------
+| Copyright (c) Jupyter Development Team.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
+.lm-Widget.lm-mod-hidden {
+  display: none !important;
+}
+
+body {
+  font-family: var(--jp-ui-font-family);
+  background: var(--jp-layout-color3);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.jp-LabShell {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.jp-LabShell.jp-mod-devMode {
+  border-top: 4px solid red;
+}
+
+/*编辑的区域*/
+#jp-main-dock-panel {
+  /*padding: 5px;*/
+}
+
+#jp-top-panel {
+  border-bottom: var(--jp-border-width) solid var(--jp-border-color0);
+  background: var(--jp-layout-color3);
+  display: flex;
+  min-height: var(--jp-private-menubar-height);
+}
+
+#jp-bottom-panel {
+  background: var(--jp-layout-color1);
+  display: flex;
+}
+
+/* titlebar style */
+#jp-top-head-panel-test {
+  min-height: var(--jp-private-titlebar-height);
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  /*border-radius: 3px;*/
+  background: var(--jp-layout-color1);
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  /*border-radius: 3px;*/
+  background: var(--jp-layout-color5);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--jp-layout-color1);
+}
+
+/* Sibling imports */
+@import './datagrid.css';
+@import './dockpanel.css';
+@import './menus.css';
+@import './scrollbar.css';
+@import './tabs.css';
+@import './buttons.css';
+@import './sidepanel.css';
+@import './titlebar.css';
